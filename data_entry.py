@@ -28,7 +28,7 @@ def get_amount():
 def get_category():
     category = input("Enter the category('I for Income and E for expense')").upper()
     if  category in CATEGORIES:
-        return CATEGORIES(category)
+        return CATEGORIES[category]
     
     print("Invalid Category. Please enter'I' for Income and 'E' for Expense.")
     return get_category()
